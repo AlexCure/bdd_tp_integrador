@@ -22,3 +22,5 @@ desktop.ini
 .idea/
 
 # Note: docs/*.pdf is intentionally NOT ignored — informe.pdf is a required deliverable.
+
+graphify-out/
