@@ -67,10 +67,13 @@ acordado.
 
 ## B — Implementación física
 
-- [ ] **B-01** · `db/estructura/01_create_tables.sql` — DDL completo, hipertabla TimescaleDB para `medicion`,
-      índices GIN sobre JSONB
-- [ ] **B-02** · Script de generación de datos sintéticos → `db/datos/` y `data/ejemplos/`
-- [ ] **B-03** · `docker-compose.yml` — para que todos puedan levantar la base y probar su consulta
+- [x] **B-01** · `db/estructura/01_create_tables.sql` — DDL completo, hipertabla TimescaleDB para `medicion`,
+      índices GIN sobre JSONB *(verificado corriendo contra Postgres 16 + TimescaleDB)*
+- [x] **B-02** · Script de generación de datos sintéticos → `db/datos/` y `data/ejemplos/` *(`generar_datos.py` +
+      `main.py`, cubre las 15 tablas respetando restricciones — historial temporal, instalación polimórfica,
+      JSONB variable por tipo de dispositivo — y exporta muestra a `data/ejemplos/mediciones.csv`)*
+- [x] **B-03** · `docker-compose.yml` — para que todos puedan levantar la base y probar su consulta *(el DDL se
+      ejecuta solo al primer `docker compose up -d`, vía `/docker-entrypoint-initdb.d`)*
 - [ ] **B-04** · Informe §8 — Implementación mínima realizada
 - [ ] **B-05** · Informe §9 — Datos de ejemplo utilizados
 

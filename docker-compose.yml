@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: timescale/timescaledb:latest-pg16
+    container_name: bdia_tp
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "${DB_PORT}:5432"
+    volumes:
+      - bdia_data:/var/lib/postgresql/data
+      - ./db/estructura:/docker-entrypoint-initdb.d
+
+volumes:
+  bdia_data:

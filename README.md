@@ -61,8 +61,49 @@ la gestión del riego, la generación de alarmas y futuras aplicaciones de Intel
 
 ## Instrucciones para ejecutar la implementación mínima
 
-<!-- TODO: completar tras la actividad 7. Debe permitir levantar el esquema, cargar los datos de ejemplo y
-     ejecutar las consultas representativas desde cero. -->
+Requisitos: Docker, y [uv](https://docs.astral.sh/uv/) para el script de carga de datos (Python).
+
+1. Copiar `.env.example` a `.env`. Los valores por defecto sirven para levantar todo en local; no hace falta
+   tocar nada salvo que el puerto 5432 ya esté ocupado en tu máquina.
+
+2. Levantar la base:
+
+   ```bash
+   docker compose up -d
+   ```
+
+   La primera vez que el contenedor arranca con un volumen vacío, Postgres ejecuta automáticamente todo `.sql`
+   que encuentre en `db/estructura/` — así que `01_create_tables.sql` corre solo y las tablas quedan creadas
+   sin ningún paso manual. Podés confirmarlo con:
+
+   ```bash
+   docker exec -i bdia_tp psql -U postgres -d bdia_tp -c "\dt"
+   ```
+
+3. Instalar las dependencias del script de datos y generar la carga de ejemplo:
+
+   ```bash
+   uv sync
+   uv run python db/datos/main.py
+   ```
+
+   Esto puebla las 15 tablas (establecimiento, dispositivos, mediciones, alarmas, usuarios) respetando las
+   restricciones del modelo — incluida la instalación polimórfica de dispositivos y el JSONB variable de
+   `medicion` según el tipo de sensor — y exporta una muestra a `data/ejemplos/mediciones.csv`.
+
+4. Ejecutar las consultas representativas de `db/consultas/` contra la base ya cargada (pendiente: ver
+   `TODO.md` §C).
+
+Si en algún momento hace falta reiniciar todo desde cero (por ejemplo, para repetir la carga sin datos viejos
+mezclados):
+
+```bash
+docker compose down -v
+docker compose up -d
+```
+
+`down -v` borra también el volumen de datos, así que la próxima vez que Postgres arranque vuelve a correr el
+DDL desde cero.
 
 ## Principales decisiones de diseño
 
