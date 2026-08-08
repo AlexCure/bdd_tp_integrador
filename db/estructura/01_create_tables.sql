@@ -139,12 +139,14 @@ CREATE TABLE medicion(
 -- ============================================================================
 CREATE TABLE regla_alarma(
     id_regla SERIAL PRIMARY KEY,
+    id_variable INTEGER NOT NULL REFERENCES variable(id_variable),
     descripcion TEXT NOT NULL,
     umbral_inferior NUMERIC,
     umbral_superior NUMERIC,
     habilitada BOOLEAN NOT NULL,
     CHECK (umbral_inferior IS NOT NULL OR umbral_superior IS NOT NULL)
 );
+
 
 CREATE TABLE evento_alarma(
     id_evento_alarma SERIAL PRIMARY KEY,
