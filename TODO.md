@@ -74,8 +74,8 @@ acordado.
       JSONB variable por tipo de dispositivo — y exporta muestra a `data/ejemplos/mediciones.csv`)*
 - [x] **B-03** · `docker-compose.yml` — para que todos puedan levantar la base y probar su consulta *(el DDL se
       ejecuta solo al primer `docker compose up -d`, vía `/docker-entrypoint-initdb.d`)*
-- [ ] **B-04** · Informe §8 — Implementación mínima realizada
-- [ ] **B-05** · Informe §9 — Datos de ejemplo utilizados
+- [x] **B-04** · Informe §8 — Implementación mínima realizada
+- [x] **B-05** · Informe §9 — Implementación mínima realizada
 
 > Usa los diagramas de A (`A-01`…`A-03`) como referencia del esquema.
 
