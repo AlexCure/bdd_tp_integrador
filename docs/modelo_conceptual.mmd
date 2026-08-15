@@ -1,0 +1,158 @@
+erDiagram
+    %% Modelo conceptual — Plataforma de agricultura de precisión (IoT + LoRaWAN)
+    %% TP Integrador BDIA — CEIA FIUBA 2026 · tarea A-01
+    %% Fuente del dominio: docs/DetallesParaModelado.ipynb
+    %% Modelo independiente de la tecnología: no incluye claves foráneas, tablas
+    %% intermedias ni tipos de datos físicos. Las relaciones N:M se representan
+    %% como tales; su resolución pertenece al modelo lógico (A-02).
+    %% Nomenclatura snake_case, alineada con db/estructura/01_create_tables.sql
+    %% para que el conceptual, el lógico, el físico y el DDL usen un mismo vocabulario.
+
+    %% ------------------------------------------------------------------
+    %% Organización del establecimiento
+    %% ------------------------------------------------------------------
+    campo {
+        int  id_campo
+        text nombre
+        text ubicacion
+        num  superficie
+    }
+
+    lote {
+        int  id_lote
+        text nombre
+        num  superficie
+    }
+
+    sector {
+        int  id_sector
+        text nombre
+    }
+
+    pivote {
+        int  id_pivote
+        text nombre
+        text fabricante
+        text modelo
+    }
+
+    asignacion_pivote {
+        int      id_asignacion
+        datetime fecha_inicio
+        datetime fecha_fin
+    }
+
+    campo  ||--o{ lote              : "posee"
+    campo  ||--o{ pivote            : "posee"
+    lote   ||--o{ sector            : "se divide en"
+    pivote ||--o{ asignacion_pivote : "es asignado en"
+    lote   ||--o{ asignacion_pivote : "es regado en"
+
+    %% ------------------------------------------------------------------
+    %% Dispositivos IoT
+    %% ------------------------------------------------------------------
+    categoria_dispositivo {
+        int  id_categoria
+        text nombre
+    }
+
+    tipo_dispositivo {
+        int  id_tipo
+        text nombre
+    }
+
+    variable {
+        int  id_variable
+        text nombre
+        text unidad
+    }
+
+    dispositivo {
+        int  id_dispositivo
+        text fabricante
+        text modelo
+        text numero_serie
+        text dev_eui
+        text app_eui
+        text app_key
+        text at_pin
+        text ota_pin
+        int  intervalo_transmision
+        text estado_operativo
+        text estado_comunicacion
+    }
+
+    instalacion_dispositivo {
+        int      id_instalacion
+        datetime fecha_inicio
+        datetime fecha_fin
+    }
+
+    categoria_dispositivo ||--o{ tipo_dispositivo        : "agrupa"
+    tipo_dispositivo      ||--o{ dispositivo             : "clasifica"
+    tipo_dispositivo      }o--o{ variable                : "sensa"
+    dispositivo ||--o{ instalacion_dispositivo           : "tiene"
+    campo       ||--o{ instalacion_dispositivo           : "aloja"
+    sector      ||--o{ instalacion_dispositivo           : "aloja"
+    pivote      ||--o{ instalacion_dispositivo           : "aloja"
+
+    %% ------------------------------------------------------------------
+    %% Mediciones
+    %% ------------------------------------------------------------------
+    gateway {
+        int  id_gateway
+        text nombre
+    }
+
+    medicion {
+        int      id_medicion
+        datetime fecha_hora
+        json     valores_medidos
+        num      rssi
+        num      snr
+        int      contador_mensajes
+    }
+
+    dispositivo ||--o{ medicion : "genera"
+    gateway     ||--o{ medicion : "recibe"
+
+    %% ------------------------------------------------------------------
+    %% Alarmas
+    %% ------------------------------------------------------------------
+    regla_alarma {
+        int  id_regla
+        text descripcion
+        num  umbral_inferior
+        num  umbral_superior
+        bool habilitada
+    }
+
+    evento_alarma {
+        int      id_evento_alarma
+        datetime fecha_hora
+        num      valor_detectado
+    }
+
+    variable     ||--o{ regla_alarma  : "es evaluada por"
+    regla_alarma }o--o{ dispositivo   : "se aplica a"
+    regla_alarma ||--o{ evento_alarma : "genera"
+    medicion     ||--o{ evento_alarma : "dispara"
+
+    %% ------------------------------------------------------------------
+    %% Usuarios
+    %% ------------------------------------------------------------------
+    perfil {
+        int  id_perfil
+        text nombre
+        text descripcion
+    }
+
+    usuario {
+        int  id_usuario
+        text nombre
+        text apellido
+        text email
+        text contrasena
+    }
+
+    perfil ||--o{ usuario : "agrupa"

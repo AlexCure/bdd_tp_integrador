@@ -53,8 +53,8 @@ acordado.
 
 ## A — Modelado
 
-- [ ] **A-01** · `docs/modelo_conceptual.png` — DER a partir de `docs/DetallesParaModelado.ipynb` (las entidades,
-      cardinalidades y restricciones de dominio ya están escritas en prosa ahí; falta el diagrama)
+- [x] **A-01** · `docs/modelo_conceptual.png` — DER a partir de `docs/DetallesParaModelado.ipynb` (fuente Mermaid
+      en `docs/modelo_conceptual.mmd`)
 - [ ] **A-02** · `docs/modelo_logico.png` — tablas, columnas, PK/FK, restricciones de integridad, resolución de N:M
 - [ ] **A-03** · `docs/modelo_fisico.png` — modelo físico (o `.md` si resulta más claro)
 - [ ] **A-04** · Documentar normalización y decisiones de diseño: polimorfismo en `instalacion_dispositivo`
