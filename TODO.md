@@ -61,7 +61,9 @@ acordado.
       (campo / sector / pivote), JSONB para `valoresMedidos`, tablas de historial temporal
 - [~] **A-05** · Informe §3 — Clasificación de los datos según su tipo *(borrador en `docs/Informe.ipynb` §2;
       pendiente de cerrar junto con `E-01`, ver `Q-05`)*
-- [ ] **A-06** · Informe §4 — Modelo conceptual
+- [x] **A-06** · Informe §4 — Modelo conceptual *(6 subsecciones: alcance, diagrama, entidades, relaciones y
+      cardinalidades, restricciones del dominio y decisiones de modelado. Las restricciones sin mecanismo
+      declarativo detectadas al redactar 4.5 quedan enunciadas ahí; su implementación es de `B-01`)*
 - [ ] **A-07** · Informe §5 — Modelo de implementación según la tecnología elegida
 - [ ] **A-08** · Informe §6 — Decisiones de normalización / embebido / referencia / desnormalización
 
@@ -147,7 +149,7 @@ acordado.
 | 1 | Descripción del caso de uso | E | `E-01` | `[~]` borrador, sin cerrar |
 | 2 | Relevamiento de datos necesarios | E | `E-02` | `[~]` falta §2.8 |
 | 3 | Clasificación de los datos según su tipo | A | `A-05` | `[~]` borrador, sin cerrar |
-| 4 | Modelo conceptual | A | `A-06` | `[~]` en prosa, sin diagrama |
+| 4 | Modelo conceptual | A | `A-06` | `[x]` |
 | 5 | Modelo de implementación según la tecnología | A | `A-07` | `[ ]` |
 | 6 | Decisiones de normalización / desnormalización | A | `A-08` | `[ ]` |
 | 7 | Justificación de la tecnología seleccionada | E | `E-03` | `[ ]` |
@@ -200,3 +202,20 @@ Todas las secciones tienen responsable y ninguna está asignada dos veces.
 - **Q-05** — *Solapamiento entre A y E en la §3.* El contenido de la clasificación de datos ya está escrito en
   `docs/Informe.ipynb` §2, que es territorio de E (`E-02`). A y E deberían acordar quién revisa `A-05` para no
   duplicar trabajo.
+- **Q-06** — *Contradicción en el dominio: cardinalidad `tipo_dispositivo` ↔ `variable`.*
+  `docs/DetallesParaModelado.ipynb` afirma dos cosas incompatibles: que "una variable es sensada por un único tipo
+  de dispositivo" (1:N) y que "todos los dispositivos sensan la variable batería" (N:M — si todos los tipos sensan
+  `batería`, esa variable pertenece a muchos tipos). El modelo conceptual (`A-01`) y el DDL (`B-01`, tabla
+  `tipo_variable`) ya asumen **N:M**, porque con 1:N habría que repetir una fila `batería` por cada tipo y aparecen
+  anomalías de actualización. **Falta que el equipo confirme el criterio y corrija esa línea del notebook de
+  dominio**, que hoy contradice al diagrama, al DDL y al informe. Es material compartido, por eso no se tocó
+  unilateralmente.
+- **Q-07** — *`evento_alarma` no registra qué medición ni qué dispositivo disparó el evento.* El dominio establece
+  que "un EventoAlarma se genera cuando una Medición cumple una ReglaAlarma" (cardinalidad 1:0..N), y el modelo
+  conceptual incluye esa relación. El DDL no: `evento_alarma` sólo referencia a `regla_alarma`. Como una regla se
+  aplica a varios dispositivos vía `alarma_dispositivo`, **un evento hoy es inatribuible**: no se puede saber qué
+  dispositivo ni qué lectura lo originó. Bloquea consultas evidentes de `C-01` ("alarmas por lote del último mes",
+  "qué medición disparó esta alarma"). La corrección es agregar la FK de `evento_alarma` a `medicion` — **compuesta**,
+  porque `medicion` es hipertabla con PK `(id_medicion, fecha_hora)`; hay que verificar que TimescaleDB admita FK
+  entrantes hacia una hipertabla en la versión usada y, si no, documentar la alternativa. Una vez definido, se
+  ejecuta como cambio a `B-01`, e impacta en `db/datos/generar_datos.py`.
