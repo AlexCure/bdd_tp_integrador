@@ -1,0 +1,185 @@
+erDiagram
+    %% Modelo lógico relacional — Plataforma de agricultura de precisión (IoT + LoRaWAN)
+    %% TP Integrador BDIA — CEIA FIUBA 2026 · tarea A-02
+    %% Derivado del modelo conceptual (docs/modelo_conceptual.mmd) y alineado con
+    %% db/estructura/01_create_tables.sql: 18 tablas, claves primarias y foráneas.
+    %% Las dos relaciones N:M del conceptual se resuelven acá con tablas asociativas
+    %% (tipo_variable, alarma_dispositivo) de clave primaria compuesta.
+    %% Los aspectos dependientes del motor —hipertabla, índices GIN, índices únicos
+    %% parciales— corresponden al modelo físico (A-03) y no se representan acá.
+
+    %% ------------------------------------------------------------------
+    %% Organización del establecimiento
+    %% ------------------------------------------------------------------
+    campo {
+        int     id_campo PK
+        text    nombre
+        text    ubicacion
+        numeric superficie
+    }
+
+    lote {
+        int     id_lote PK
+        int     id_campo FK
+        text    nombre
+        numeric superficie
+    }
+
+    sector {
+        int  id_sector PK
+        int  id_lote FK
+        text nombre
+    }
+
+    pivote {
+        int  id_pivote PK
+        int  id_campo FK
+        text nombre
+        text fabricante
+        text modelo
+    }
+
+    asignacion_pivote {
+        int       id_asignacion PK
+        int       id_pivote FK
+        int       id_lote FK
+        timestamp fecha_inicio
+        timestamp fecha_fin "NULL = asignación activa"
+    }
+
+    campo  ||--o{ lote              : ""
+    campo  ||--o{ pivote            : ""
+    lote   ||--o{ sector            : ""
+    pivote ||--o{ asignacion_pivote : ""
+    lote   ||--o{ asignacion_pivote : ""
+
+    %% ------------------------------------------------------------------
+    %% Dispositivos IoT
+    %% ------------------------------------------------------------------
+    categoria_dispositivo {
+        int  id_categoria PK
+        text nombre
+    }
+
+    tipo_dispositivo {
+        int  id_tipo PK
+        int  id_categoria FK
+        text nombre
+    }
+
+    variable {
+        int  id_variable PK
+        text nombre
+        text unidad
+    }
+
+    tipo_variable {
+        int id_tipo_dispositivo PK "FK"
+        int id_variable PK "FK"
+    }
+
+    dispositivo {
+        int  id_dispositivo PK
+        int  id_tipo FK
+        text fabricante
+        text modelo
+        text numero_serie
+        text dev_eui
+        text app_eui
+        text app_key
+        text at_pin
+        text ota_pin
+        int  intervalo_transmision
+        text estado_operativo "CHECK on/off"
+        text estado_comunicacion "CHECK connected/disconnected"
+    }
+
+    instalacion_dispositivo {
+        int       id_instalacion PK
+        int       id_dispositivo FK
+        int       id_campo FK "nullable"
+        int       id_sector FK "nullable"
+        int       id_pivote FK "nullable"
+        timestamp fecha_inicio
+        timestamp fecha_fin "NULL = instalación activa"
+    }
+
+    categoria_dispositivo ||--o{ tipo_dispositivo : ""
+    tipo_dispositivo      ||--o{ tipo_variable    : ""
+    variable              ||--o{ tipo_variable    : ""
+    tipo_dispositivo      ||--o{ dispositivo      : ""
+    dispositivo ||--o{ instalacion_dispositivo    : ""
+    campo       |o--o{ instalacion_dispositivo    : ""
+    sector      |o--o{ instalacion_dispositivo    : ""
+    pivote      |o--o{ instalacion_dispositivo    : ""
+
+    %% ------------------------------------------------------------------
+    %% Mediciones
+    %% ------------------------------------------------------------------
+    gateway {
+        int  id_gateway PK
+        text nombre
+    }
+
+    medicion {
+        int       id_medicion PK
+        timestamp fecha_hora PK
+        int       id_dispositivo FK
+        int       id_gateway FK
+        jsonb     valores_medidos
+        numeric   rssi
+        numeric   snr
+        int       contador_mensajes
+    }
+
+    dispositivo ||--o{ medicion : ""
+    gateway     ||--o{ medicion : ""
+
+    %% ------------------------------------------------------------------
+    %% Alarmas
+    %% ------------------------------------------------------------------
+    regla_alarma {
+        int     id_regla PK
+        int     id_variable FK
+        text    descripcion
+        numeric umbral_inferior "CHECK: al menos un umbral"
+        numeric umbral_superior
+        boolean habilitada
+    }
+
+    alarma_dispositivo {
+        int id_regla_alarma PK "FK"
+        int id_dispositivo PK "FK"
+    }
+
+    evento_alarma {
+        int       id_evento_alarma PK
+        int       id_regla FK
+        timestamp fecha_hora
+        numeric   valor_detectado
+    }
+
+    variable     ||--o{ regla_alarma       : ""
+    regla_alarma ||--o{ alarma_dispositivo : ""
+    dispositivo  ||--o{ alarma_dispositivo : ""
+    regla_alarma ||--o{ evento_alarma      : ""
+
+    %% ------------------------------------------------------------------
+    %% Usuarios
+    %% ------------------------------------------------------------------
+    perfil {
+        int  id_perfil PK
+        text nombre "CHECK: Operador/Configurador/Administrador"
+        text descripcion
+    }
+
+    usuario {
+        int  id_usuario PK
+        int  id_perfil FK
+        text nombre
+        text apellido
+        text email UK
+        text contrasena
+    }
+
+    perfil ||--o{ usuario : ""

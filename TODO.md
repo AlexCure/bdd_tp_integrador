@@ -55,7 +55,9 @@ acordado.
 
 - [x] **A-01** · `docs/modelo_conceptual.png` — DER a partir de `docs/DetallesParaModelado.ipynb` (fuente Mermaid
       en `docs/modelo_conceptual.mmd`)
-- [ ] **A-02** · `docs/modelo_logico.png` — tablas, columnas, PK/FK, restricciones de integridad, resolución de N:M
+- [x] **A-02** · `docs/modelo_logico.png` — tablas, columnas, PK/FK, restricciones de integridad, resolución de N:M
+      *(fuente en `docs/modelo_logico.mmd`; verificado en ambas direcciones contra `01_create_tables.sql` — 18/18
+      tablas, todas las columnas, sin sobrantes)*
 - [ ] **A-03** · `docs/modelo_fisico.png` — modelo físico (o `.md` si resulta más claro)
 - [ ] **A-04** · Documentar normalización y decisiones de diseño: polimorfismo en `instalacion_dispositivo`
       (campo / sector / pivote), JSONB para `valoresMedidos`, tablas de historial temporal
