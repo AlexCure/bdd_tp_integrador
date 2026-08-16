@@ -167,49 +167,76 @@ SELECT 'Gateway ' || gs::text
 FROM generate_series(1, 2) AS gs;
 
 INSERT INTO medicion (
-id_dispositivo, id_gateway, fecha_hora, valores_medidos, rssi, snr, contador_mensajes
+    id_dispositivo,
+    id_gateway,
+    fecha_hora,
+    valores_medidos,
+    rssi,
+    snr,
+    contador_mensajes
+)
+WITH dispositivos_ordenados AS (
+    SELECT
+        d.id_dispositivo,
+        d.id_tipo,
+        ROW_NUMBER() OVER (ORDER BY d.id_dispositivo) AS rn,
+        COUNT(*) OVER () AS cnt
+    FROM dispositivo d
+),
+gateways_ordenados AS (
+    SELECT
+        g.id_gateway,
+        ROW_NUMBER() OVER (ORDER BY g.id_gateway) AS rn,
+        COUNT(*) OVER () AS cnt
+    FROM gateway g
+),
+series AS (
+    SELECT gs
+    FROM generate_series(1, 50000) AS gs
 )
 SELECT
-d.id_dispositivo,
-g.id_gateway,
-now() - make_interval(mins => floor(random() * (60 * 24 * 30))::int),
-CASE td.nombre
-WHEN 'Sonda de humedad' THEN jsonb_build_object(
-'humedad_suelo', round((10 + random() * 50)::numeric, 1),
-'temperatura_suelo', round((10 + random() * 25)::numeric, 1),
-'conductividad_electrica', round((0.5 + random() * 2.5)::numeric, 2),
-'bateria', round((20 + random() * 80)::numeric, 1)
-)
-WHEN 'Estación meteorológica' THEN jsonb_build_object(
-'temperatura', round((-5 + random() * 45)::numeric, 1),
-'humedad_relativa', round((20 + random() * 80)::numeric, 1),
-'velocidad_viento', round((random() * 60)::numeric, 1),
-'radiacion_solar', round((random() * 1000)::numeric, 1),
-'precipitaciones', round((random() * 20)::numeric, 1),
-'bateria', round((20 + random() * 80)::numeric, 1)
-)
-ELSE jsonb_build_object(
-'caudal', round((random() * 500)::numeric, 1),
-'bateria', round((20 + random() * 80)::numeric, 1)
-)
-END,
-round((-120 + random() * 60)::numeric, 1),
-round((-20 + random() * 30)::numeric, 1),
-gs
-FROM generate_series(1, 500000) AS gs
-CROSS JOIN LATERAL (
-SELECT id_dispositivo, id_tipo
-FROM dispositivo
-ORDER BY random()
-LIMIT 1
-) AS d
-JOIN tipo_dispositivo td ON td.id_tipo = d.id_tipo
-CROSS JOIN LATERAL (
-SELECT id_gateway
-FROM gateway
-ORDER BY random()
-LIMIT 1
-) AS g;
+    d.id_dispositivo,
+    g.id_gateway,
+    now() - (random() * interval '365 days'),
+    CASE td.nombre
+        WHEN 'Sonda de humedad' THEN jsonb_build_object(
+            'humedad_suelo', round((10 + random() * 50)::numeric, 1),
+            'temperatura_suelo', round((10 + random() * 25)::numeric, 1),
+            'conductividad_electrica', round((0.5 + random() * 2.5)::numeric, 2),
+            'bateria', CASE
+                WHEN random() < 0.15 THEN round((5 + random() * 14)::numeric, 1)
+                ELSE round((20 + random() * 80)::numeric, 1)
+            END
+        )
+        WHEN 'Estación meteorológica' THEN jsonb_build_object(
+            'temperatura', round((-5 + random() * 45)::numeric, 1),
+            'humedad_relativa', round((20 + random() * 80)::numeric, 1),
+            'velocidad_viento', round((random() * 60)::numeric, 1),
+            'radiacion_solar', round((random() * 1000)::numeric, 1),
+            'precipitaciones', round((random() * 20)::numeric, 1),
+            'bateria', CASE
+                WHEN random() < 0.15 THEN round((5 + random() * 14)::numeric, 1)
+                ELSE round((20 + random() * 80)::numeric, 1)
+            END
+        )
+        ELSE jsonb_build_object(
+            'caudal', round((random() * 500)::numeric, 1),
+            'bateria', CASE
+                WHEN random() < 0.15 THEN round((5 + random() * 14)::numeric, 1)
+                ELSE round((20 + random() * 80)::numeric, 1)
+            END
+        )
+    END,
+    round((-120 + random() * 60)::numeric, 1),
+    round((-20 + random() * 30)::numeric, 1),
+    s.gs
+FROM series s
+JOIN dispositivos_ordenados d
+    ON d.rn = ((s.gs - 1) % d.cnt) + 1
+JOIN tipo_dispositivo td
+    ON td.id_tipo = d.id_tipo
+JOIN gateways_ordenados g
+    ON g.rn = (((s.gs - 1) * 7) % g.cnt) + 1;
 
 INSERT INTO regla_alarma (id_variable, descripcion, umbral_inferior, umbral_superior, habilitada)
 SELECT v.id_variable, r.descripcion, r.umbral_inferior, r.umbral_superior, true

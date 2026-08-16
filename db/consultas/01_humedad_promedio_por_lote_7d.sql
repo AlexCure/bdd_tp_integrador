@@ -18,4 +18,4 @@ JOIN lote l
 WHERE i.fecha_fin IS NULL
   AND m.fecha_hora >= NOW() - INTERVAL '7 days'
 GROUP BY l.id_lote, l.nombre
-ORDER BY humedad_promedio ASC; 
+ORDER BY humedad_promedio ASC;
