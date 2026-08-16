@@ -28,10 +28,10 @@ Integrantes del grupo: **Ariel · Alex · Andrés · Alan · Federico**.
 
 | Rol | Integrante |
 | --- | --- |
-| A — Modelado | TBD |
+| A — Modelado | Ariel |
 | B — Implementación física | TBD |
-| C — Optimización y escalabilidad | TBD |
-| D — Seguridad y arquitectura | TBD |
+| C — Optimización y escalabilidad | Andres |
+| D — Seguridad y arquitectura | Fede |
 | E — Informe, integración y calidad | TBD |
 
 > Falta asignar quién toma cada rol (`COORD-02`). La cátedra exige evidencia de participación de cada integrante
@@ -87,11 +87,11 @@ acordado.
 
 ## C — Optimización y escalabilidad
 
-- [ ] **C-01** · Juntar las 5+ consultas de todos, verificar que cubran lo exigido por la consigna (JOINs,
+- [x] **C-01** · Juntar las 5+ consultas de todos, verificar que cubran lo exigido por la consigna (JOINs,
       agregaciones, `GROUP BY`, funciones de ventana, y una consulta que justifique el uso de un índice o vista)
       y completar las que falten → `db/consultas/`
-- [ ] **C-02** · Índices, vistas y agregados continuos, cada uno respaldado con `EXPLAIN` → `db/indices_vistas/`
-- [ ] **C-03** · Informe §10 — Consultas representativas (cada una necesita una explicación breve de qué pregunta
+- [x] **C-02** · Índices, vistas y agregados continuos, cada uno respaldado con `EXPLAIN` → `db/indices_vistas/`
+- [x] **C-03** · Informe §10 — Consultas representativas (cada una necesita una explicación breve de qué pregunta
       responde y por qué es útil). Depende de `C-01`; no tenía responsable en la división original, ver `Q-03`
 - [ ] **C-04** · Informe §14 — Consideraciones de escalabilidad y rendimiento (particionado, retención, precálculo,
       compromisos asumidos). **Es la sección 14, no la 12** — ver `Q-01`
@@ -159,7 +159,7 @@ acordado.
 | 7 | Justificación de la tecnología seleccionada | E | `E-03` | `[ ]` |
 | 8 | Implementación mínima realizada | B | `B-04` | `[ ]` |
 | 9 | Datos de ejemplo utilizados | B | `B-05` | `[ ]` |
-| 10 | Consultas representativas | C | `C-03` | `[ ]` |
+| 10 | Consultas representativas | C | `C-03` | `[x]` |
 | 11 | Datos semiestructurados / no estructurados / vectoriales | D | `D-03` | `[ ]` |
 | 12 | Propuesta de arquitectura de datos | D | `D-04` | `[ ]` |
 | 13 | Estrategia de seguridad, permisos y aislamiento | D | `D-05` | `[ ]` |
