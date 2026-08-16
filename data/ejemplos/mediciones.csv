@@ -1,101 +1,101 @@
 id_medicion,numero_serie,tipo_dispositivo,fecha_hora,valores_medidos,rssi,snr,contador_mensajes
-671,6dc6aa685c,Caudalímetro,2026-07-09 00:49:36.397273,"{""caudal"": 442.0, ""bateria"": 57.9}",-114.0,-17.5,671
-717,712560fc1f,Sonda de humedad,2026-07-09 04:26:36.430512,"{""bateria"": 34.4, ""humedad_suelo"": 43.5, ""temperatura_suelo"": 18.3, ""conductividad_electrica"": 1.11}",-104.0,8.3,717
-632,54cf9b3b5e,Estación meteorológica,2026-07-09 04:28:36.368173,"{""bateria"": 65.4, ""temperatura"": 19.0, ""precipitaciones"": 4.0, ""radiacion_solar"": 64.7, ""humedad_relativa"": 35.0, ""velocidad_viento"": 58.7}",-97.7,5.1,632
-190,82b45bbd12,Sonda de humedad,2026-07-09 04:33:36.054312,"{""bateria"": 81.4, ""humedad_suelo"": 11.9, ""temperatura_suelo"": 11.7, ""conductividad_electrica"": 1.0}",-116.8,0.2,190
-559,82b45bbd12,Sonda de humedad,2026-07-09 04:37:36.313580,"{""bateria"": 59.9, ""humedad_suelo"": 60.0, ""temperatura_suelo"": 24.1, ""conductividad_electrica"": 2.91}",-94.1,-9.1,559
-322,8db3d8a5d2,Sonda de humedad,2026-07-09 05:56:36.144331,"{""bateria"": 40.0, ""humedad_suelo"": 18.8, ""temperatura_suelo"": 11.7, ""conductividad_electrica"": 1.19}",-85.5,3.6,322
-728,9ed3e3f644,Caudalímetro,2026-07-09 05:56:36.437994,"{""caudal"": 162.1, ""bateria"": 52.6}",-105.1,-8.9,728
-750,8db3d8a5d2,Sonda de humedad,2026-07-09 07:26:36.453549,"{""bateria"": 37.2, ""humedad_suelo"": 13.5, ""temperatura_suelo"": 29.6, ""conductividad_electrica"": 2.25}",-85.0,-0.9,750
-465,6dc6aa685c,Caudalímetro,2026-07-09 08:02:36.245049,"{""caudal"": 387.1, ""bateria"": 54.2}",-67.4,4.0,465
-29,82b45bbd12,Sonda de humedad,2026-07-09 08:11:35.936974,"{""bateria"": 20.1, ""humedad_suelo"": 27.1, ""temperatura_suelo"": 13.2, ""conductividad_electrica"": 2.83}",-116.4,-0.7,29
-44,eda9a18f55,Estación meteorológica,2026-07-09 08:29:35.948940,"{""bateria"": 22.4, ""temperatura"": 18.5, ""precipitaciones"": 8.8, ""radiacion_solar"": 665.1, ""humedad_relativa"": 86.0, ""velocidad_viento"": 30.9}",-100.8,-0.5,44
-411,eda9a18f55,Estación meteorológica,2026-07-09 08:41:36.206826,"{""bateria"": 76.1, ""temperatura"": 34.3, ""precipitaciones"": 14.1, ""radiacion_solar"": 584.0, ""humedad_relativa"": 42.9, ""velocidad_viento"": 54.9}",-110.7,-13.5,411
-116,6dc6aa685c,Caudalímetro,2026-07-09 09:50:36.001127,"{""caudal"": 196.1, ""bateria"": 76.8}",-113.2,-9.3,116
-152,6dc6aa685c,Caudalímetro,2026-07-09 10:00:36.027496,"{""caudal"": 469.0, ""bateria"": 69.2}",-94.9,-7.9,152
-285,82b45bbd12,Sonda de humedad,2026-07-09 10:10:36.118796,"{""bateria"": 83.1, ""humedad_suelo"": 19.3, ""temperatura_suelo"": 24.6, ""conductividad_electrica"": 0.59}",-69.1,-5.4,285
-192,712560fc1f,Sonda de humedad,2026-07-09 11:22:36.055587,"{""bateria"": 73.5, ""humedad_suelo"": 13.2, ""temperatura_suelo"": 35.0, ""conductividad_electrica"": 2.2}",-103.4,-1.8,192
-734,eda9a18f55,Estación meteorológica,2026-07-09 11:56:36.442224,"{""bateria"": 45.2, ""temperatura"": 2.2, ""precipitaciones"": 11.5, ""radiacion_solar"": 998.4, ""humedad_relativa"": 42.7, ""velocidad_viento"": 45.8}",-83.6,-2.7,734
-120,922050d9f0,Estación meteorológica,2026-07-09 12:33:36.004056,"{""bateria"": 38.1, ""temperatura"": 28.2, ""precipitaciones"": 12.1, ""radiacion_solar"": 92.7, ""humedad_relativa"": 49.4, ""velocidad_viento"": 42.7}",-78.4,-11.2,120
-204,9ed3e3f644,Caudalímetro,2026-07-09 13:27:36.063830,"{""caudal"": 416.6, ""bateria"": 35.9}",-97.2,8.3,204
-594,922050d9f0,Estación meteorológica,2026-07-09 15:22:36.340534,"{""bateria"": 73.5, ""temperatura"": 0.5, ""precipitaciones"": 5.7, ""radiacion_solar"": 696.9, ""humedad_relativa"": 30.3, ""velocidad_viento"": 38.2}",-99.8,-19.1,594
-239,012effddc6,Caudalímetro,2026-07-09 16:19:36.087614,"{""caudal"": 160.3, ""bateria"": 51.1}",-66.8,5.8,239
-727,6dc6aa685c,Caudalímetro,2026-07-09 17:02:36.437322,"{""caudal"": 249.4, ""bateria"": 55.9}",-115.8,-3.8,727
-571,012effddc6,Caudalímetro,2026-07-09 18:32:36.322341,"{""caudal"": 379.8, ""bateria"": 44.6}",-115.8,-16.1,571
-321,82b45bbd12,Sonda de humedad,2026-07-09 18:35:36.143390,"{""bateria"": 81.2, ""humedad_suelo"": 31.8, ""temperatura_suelo"": 23.2, ""conductividad_electrica"": 0.94}",-86.6,-16.1,321
-613,712560fc1f,Sonda de humedad,2026-07-09 19:45:36.354364,"{""bateria"": 71.3, ""humedad_suelo"": 48.0, ""temperatura_suelo"": 31.5, ""conductividad_electrica"": 1.91}",-80.0,8.8,613
-64,8db3d8a5d2,Sonda de humedad,2026-07-09 20:16:35.964268,"{""bateria"": 39.0, ""humedad_suelo"": 25.9, ""temperatura_suelo"": 21.3, ""conductividad_electrica"": 0.63}",-71.8,-14.5,64
-197,eda9a18f55,Estación meteorológica,2026-07-09 20:16:36.059214,"{""bateria"": 67.4, ""temperatura"": 20.6, ""precipitaciones"": 7.2, ""radiacion_solar"": 474.4, ""humedad_relativa"": 45.6, ""velocidad_viento"": 11.9}",-88.2,5.6,197
-552,54cf9b3b5e,Estación meteorológica,2026-07-09 21:28:36.308083,"{""bateria"": 74.9, ""temperatura"": 16.3, ""precipitaciones"": 12.4, ""radiacion_solar"": 48.8, ""humedad_relativa"": 44.2, ""velocidad_viento"": 24.4}",-69.7,-15.3,552
-769,eda9a18f55,Estación meteorológica,2026-07-09 23:25:36.467980,"{""bateria"": 92.7, ""temperatura"": 16.7, ""precipitaciones"": 11.7, ""radiacion_solar"": 609.4, ""humedad_relativa"": 21.3, ""velocidad_viento"": 6.1}",-65.9,6.2,769
-297,712560fc1f,Sonda de humedad,2026-07-09 23:39:36.126886,"{""bateria"": 83.8, ""humedad_suelo"": 43.2, ""temperatura_suelo"": 34.7, ""conductividad_electrica"": 0.94}",-75.9,-17.7,297
-417,eda9a18f55,Estación meteorológica,2026-07-10 03:12:36.210927,"{""bateria"": 25.1, ""temperatura"": 29.6, ""precipitaciones"": 8.4, ""radiacion_solar"": 803.6, ""humedad_relativa"": 71.4, ""velocidad_viento"": 38.0}",-102.5,-6.6,417
-252,eda9a18f55,Estación meteorológica,2026-07-10 04:07:36.096490,"{""bateria"": 35.2, ""temperatura"": 22.8, ""precipitaciones"": 2.1, ""radiacion_solar"": 789.9, ""humedad_relativa"": 94.0, ""velocidad_viento"": 48.9}",-108.3,6.6,252
-9,012effddc6,Caudalímetro,2026-07-10 04:14:35.920589,"{""caudal"": 27.7, ""bateria"": 80.3}",-76.4,0.9,9
-307,012effddc6,Caudalímetro,2026-07-10 04:21:36.133506,"{""caudal"": 329.2, ""bateria"": 53.2}",-74.9,-18.2,307
-602,8db3d8a5d2,Sonda de humedad,2026-07-10 04:44:36.346545,"{""bateria"": 66.4, ""humedad_suelo"": 51.1, ""temperatura_suelo"": 11.3, ""conductividad_electrica"": 1.66}",-66.1,1.8,602
-505,54cf9b3b5e,Estación meteorológica,2026-07-10 05:36:36.273041,"{""bateria"": 61.1, ""temperatura"": -1.8, ""precipitaciones"": 10.6, ""radiacion_solar"": 108.0, ""humedad_relativa"": 35.6, ""velocidad_viento"": 46.1}",-94.3,-17.8,505
-8,eda9a18f55,Estación meteorológica,2026-07-10 05:56:35.919402,"{""bateria"": 83.0, ""temperatura"": 22.7, ""precipitaciones"": 0.1, ""radiacion_solar"": 546.8, ""humedad_relativa"": 31.8, ""velocidad_viento"": 44.1}",-62.0,4.6,8
-212,922050d9f0,Estación meteorológica,2026-07-10 06:19:36.069199,"{""bateria"": 32.7, ""temperatura"": -3.1, ""precipitaciones"": 19.0, ""radiacion_solar"": 527.5, ""humedad_relativa"": 56.3, ""velocidad_viento"": 13.1}",-90.5,-1.3,212
-603,82b45bbd12,Sonda de humedad,2026-07-10 07:33:36.347259,"{""bateria"": 79.6, ""humedad_suelo"": 57.0, ""temperatura_suelo"": 23.1, ""conductividad_electrica"": 1.74}",-96.2,-7.6,603
-245,8db3d8a5d2,Sonda de humedad,2026-07-10 08:13:36.091873,"{""bateria"": 96.2, ""humedad_suelo"": 33.3, ""temperatura_suelo"": 12.8, ""conductividad_electrica"": 1.68}",-115.4,-9.7,245
-624,8db3d8a5d2,Sonda de humedad,2026-07-10 09:24:36.362269,"{""bateria"": 33.1, ""humedad_suelo"": 10.4, ""temperatura_suelo"": 16.5, ""conductividad_electrica"": 2.15}",-70.8,-6.3,624
-423,712560fc1f,Sonda de humedad,2026-07-10 09:56:36.215279,"{""bateria"": 91.9, ""humedad_suelo"": 37.4, ""temperatura_suelo"": 19.7, ""conductividad_electrica"": 2.25}",-103.7,0.8,423
-607,922050d9f0,Estación meteorológica,2026-07-10 11:02:36.349955,"{""bateria"": 84.5, ""temperatura"": 21.5, ""precipitaciones"": 1.5, ""radiacion_solar"": 855.1, ""humedad_relativa"": 53.4, ""velocidad_viento"": 51.0}",-60.3,8.0,607
-618,54cf9b3b5e,Estación meteorológica,2026-07-10 11:41:36.357811,"{""bateria"": 38.1, ""temperatura"": -0.7, ""precipitaciones"": 2.7, ""radiacion_solar"": 19.4, ""humedad_relativa"": 94.8, ""velocidad_viento"": 4.2}",-75.5,2.5,618
-549,54cf9b3b5e,Estación meteorológica,2026-07-10 12:11:36.306073,"{""bateria"": 50.5, ""temperatura"": 8.7, ""precipitaciones"": 1.8, ""radiacion_solar"": 383.8, ""humedad_relativa"": 91.5, ""velocidad_viento"": 1.8}",-93.3,-15.3,549
-641,82b45bbd12,Sonda de humedad,2026-07-10 12:23:36.374245,"{""bateria"": 53.2, ""humedad_suelo"": 50.0, ""temperatura_suelo"": 13.7, ""conductividad_electrica"": 2.75}",-77.8,-7.0,641
-340,922050d9f0,Estación meteorológica,2026-07-10 14:06:36.157086,"{""bateria"": 42.4, ""temperatura"": -3.0, ""precipitaciones"": 2.9, ""radiacion_solar"": 479.0, ""humedad_relativa"": 61.4, ""velocidad_viento"": 59.8}",-87.4,-16.8,340
-76,6dc6aa685c,Caudalímetro,2026-07-10 14:31:35.972942,"{""caudal"": 218.9, ""bateria"": 59.0}",-111.5,-18.9,76
-485,012effddc6,Caudalímetro,2026-07-10 14:33:36.258902,"{""caudal"": 10.0, ""bateria"": 38.4}",-95.2,-19.4,485
-105,8db3d8a5d2,Sonda de humedad,2026-07-10 15:18:35.993568,"{""bateria"": 70.5, ""humedad_suelo"": 35.8, ""temperatura_suelo"": 34.1, ""conductividad_electrica"": 1.03}",-87.2,-8.2,105
-61,012effddc6,Caudalímetro,2026-07-10 17:15:35.961948,"{""caudal"": 210.4, ""bateria"": 41.3}",-67.0,-14.5,61
-668,54cf9b3b5e,Estación meteorológica,2026-07-10 18:31:36.395126,"{""bateria"": 75.1, ""temperatura"": -3.5, ""precipitaciones"": 12.8, ""radiacion_solar"": 410.5, ""humedad_relativa"": 77.1, ""velocidad_viento"": 17.0}",-108.5,-16.1,668
-75,82b45bbd12,Sonda de humedad,2026-07-10 19:57:35.972221,"{""bateria"": 32.6, ""humedad_suelo"": 37.0, ""temperatura_suelo"": 20.3, ""conductividad_electrica"": 2.47}",-97.5,-3.8,75
-503,8db3d8a5d2,Sonda de humedad,2026-07-10 20:35:36.271645,"{""bateria"": 63.1, ""humedad_suelo"": 11.2, ""temperatura_suelo"": 25.8, ""conductividad_electrica"": 2.84}",-92.8,0.0,503
-122,54cf9b3b5e,Estación meteorológica,2026-07-10 21:06:36.005741,"{""bateria"": 53.1, ""temperatura"": 21.7, ""precipitaciones"": 7.1, ""radiacion_solar"": 11.8, ""humedad_relativa"": 40.3, ""velocidad_viento"": 24.3}",-65.3,-3.6,122
-673,eda9a18f55,Estación meteorológica,2026-07-10 22:18:36.398680,"{""bateria"": 87.2, ""temperatura"": 2.5, ""precipitaciones"": 14.1, ""radiacion_solar"": 816.0, ""humedad_relativa"": 68.8, ""velocidad_viento"": 20.5}",-116.1,4.6,673
-442,9ed3e3f644,Caudalímetro,2026-07-10 22:30:36.228498,"{""caudal"": 272.3, ""bateria"": 76.5}",-103.7,4.1,442
-646,eda9a18f55,Estación meteorológica,2026-07-10 23:00:36.377913,"{""bateria"": 49.3, ""temperatura"": 8.9, ""precipitaciones"": 7.9, ""radiacion_solar"": 373.5, ""humedad_relativa"": 31.6, ""velocidad_viento"": 36.0}",-102.5,-5.6,646
-773,012effddc6,Caudalímetro,2026-07-10 23:11:36.471975,"{""caudal"": 214.3, ""bateria"": 36.5}",-62.5,9.4,773
-610,6dc6aa685c,Caudalímetro,2026-07-10 23:51:36.352077,"{""caudal"": 195.8, ""bateria"": 77.7}",-85.4,-17.3,610
-308,eda9a18f55,Estación meteorológica,2026-07-10 23:55:36.134267,"{""bateria"": 89.5, ""temperatura"": 11.9, ""precipitaciones"": 2.5, ""radiacion_solar"": 854.0, ""humedad_relativa"": 24.1, ""velocidad_viento"": 12.0}",-89.0,-1.7,308
-681,54cf9b3b5e,Estación meteorológica,2026-07-10 23:58:36.404498,"{""bateria"": 89.0, ""temperatura"": -1.7, ""precipitaciones"": 15.8, ""radiacion_solar"": 742.6, ""humedad_relativa"": 47.3, ""velocidad_viento"": 58.9}",-93.9,5.6,681
-62,012effddc6,Caudalímetro,2026-07-11 02:15:35.962700,"{""caudal"": 227.6, ""bateria"": 89.4}",-97.5,-3.5,62
-219,6dc6aa685c,Caudalímetro,2026-07-11 02:39:36.073983,"{""caudal"": 156.7, ""bateria"": 48.2}",-109.7,7.1,219
-255,82b45bbd12,Sonda de humedad,2026-07-11 03:04:36.098353,"{""bateria"": 27.3, ""humedad_suelo"": 58.5, ""temperatura_suelo"": 12.3, ""conductividad_electrica"": 0.67}",-90.8,-2.8,255
-419,012effddc6,Caudalímetro,2026-07-11 03:18:36.212422,"{""caudal"": 424.7, ""bateria"": 91.5}",-77.2,-0.6,419
-16,54cf9b3b5e,Estación meteorológica,2026-07-11 04:54:35.925916,"{""bateria"": 32.7, ""temperatura"": -3.3, ""precipitaciones"": 6.6, ""radiacion_solar"": 544.4, ""humedad_relativa"": 56.4, ""velocidad_viento"": 40.8}",-110.5,-19.3,16
-24,eda9a18f55,Estación meteorológica,2026-07-11 05:37:35.932138,"{""bateria"": 84.1, ""temperatura"": 23.1, ""precipitaciones"": 2.1, ""radiacion_solar"": 979.3, ""humedad_relativa"": 43.0, ""velocidad_viento"": 4.2}",-87.0,-13.1,24
-112,6dc6aa685c,Caudalímetro,2026-07-11 06:00:35.998380,"{""caudal"": 59.6, ""bateria"": 38.4}",-69.6,-5.9,112
-446,922050d9f0,Estación meteorológica,2026-07-11 06:31:36.231258,"{""bateria"": 69.4, ""temperatura"": 37.7, ""precipitaciones"": 17.5, ""radiacion_solar"": 977.6, ""humedad_relativa"": 54.3, ""velocidad_viento"": 19.7}",-69.6,-12.5,446
-703,012effddc6,Caudalímetro,2026-07-11 06:55:36.420573,"{""caudal"": 394.9, ""bateria"": 39.8}",-115.5,2.4,703
-694,eda9a18f55,Estación meteorológica,2026-07-11 08:38:36.413897,"{""bateria"": 51.3, ""temperatura"": 30.6, ""precipitaciones"": 5.3, ""radiacion_solar"": 233.4, ""humedad_relativa"": 81.9, ""velocidad_viento"": 3.1}",-102.2,-12.5,694
-257,9ed3e3f644,Caudalímetro,2026-07-11 11:12:36.099649,"{""caudal"": 241.2, ""bateria"": 60.6}",-110.0,-19.5,257
-536,712560fc1f,Sonda de humedad,2026-07-11 14:26:36.297040,"{""bateria"": 53.7, ""humedad_suelo"": 22.5, ""temperatura_suelo"": 20.1, ""conductividad_electrica"": 2.19}",-64.4,1.5,536
-259,922050d9f0,Estación meteorológica,2026-07-11 16:57:36.100999,"{""bateria"": 64.6, ""temperatura"": 39.0, ""precipitaciones"": 2.6, ""radiacion_solar"": 94.3, ""humedad_relativa"": 75.5, ""velocidad_viento"": 41.4}",-90.2,1.8,259
-70,712560fc1f,Sonda de humedad,2026-07-11 17:43:35.968364,"{""bateria"": 44.6, ""humedad_suelo"": 49.1, ""temperatura_suelo"": 17.2, ""conductividad_electrica"": 0.82}",-62.6,8.0,70
-736,8db3d8a5d2,Sonda de humedad,2026-07-11 17:51:36.443704,"{""bateria"": 38.5, ""humedad_suelo"": 58.8, ""temperatura_suelo"": 14.8, ""conductividad_electrica"": 1.51}",-115.1,-4.8,736
-537,9ed3e3f644,Caudalímetro,2026-07-11 18:24:36.297683,"{""caudal"": 101.7, ""bateria"": 66.9}",-85.5,-19.8,537
-483,012effddc6,Caudalímetro,2026-07-11 19:35:36.257501,"{""caudal"": 255.1, ""bateria"": 20.5}",-89.8,3.6,483
-634,eda9a18f55,Estación meteorológica,2026-07-11 19:39:36.369547,"{""bateria"": 51.0, ""temperatura"": 32.3, ""precipitaciones"": 11.9, ""radiacion_solar"": 614.3, ""humedad_relativa"": 86.6, ""velocidad_viento"": 32.1}",-116.3,-18.4,634
-700,8db3d8a5d2,Sonda de humedad,2026-07-11 19:57:36.418464,"{""bateria"": 67.8, ""humedad_suelo"": 20.5, ""temperatura_suelo"": 33.7, ""conductividad_electrica"": 2.87}",-61.3,-9.8,700
-615,9ed3e3f644,Caudalímetro,2026-07-11 20:35:36.355667,"{""caudal"": 299.0, ""bateria"": 67.7}",-113.3,-17.8,615
-176,6dc6aa685c,Caudalímetro,2026-07-11 21:19:36.044384,"{""caudal"": 141.1, ""bateria"": 77.3}",-81.3,-9.8,176
-79,922050d9f0,Estación meteorológica,2026-07-11 21:58:35.975020,"{""bateria"": 60.2, ""temperatura"": 21.8, ""precipitaciones"": 10.1, ""radiacion_solar"": 190.7, ""humedad_relativa"": 28.8, ""velocidad_viento"": 26.1}",-103.3,2.8,79
-200,012effddc6,Caudalímetro,2026-07-11 22:39:36.061327,"{""caudal"": 439.1, ""bateria"": 84.2}",-107.2,-16.6,200
-313,6dc6aa685c,Caudalímetro,2026-07-12 00:18:36.137739,"{""caudal"": 489.8, ""bateria"": 84.6}",-74.7,-19.8,313
-761,9ed3e3f644,Caudalímetro,2026-07-12 00:25:36.461098,"{""caudal"": 442.6, ""bateria"": 55.1}",-74.0,-1.2,761
-144,82b45bbd12,Sonda de humedad,2026-07-12 01:01:36.021873,"{""bateria"": 48.2, ""humedad_suelo"": 33.9, ""temperatura_suelo"": 30.6, ""conductividad_electrica"": 1.19}",-74.4,9.8,144
-521,9ed3e3f644,Caudalímetro,2026-07-12 01:58:36.285239,"{""caudal"": 50.1, ""bateria"": 65.9}",-108.9,5.3,521
-13,012effddc6,Caudalímetro,2026-07-12 03:18:35.923722,"{""caudal"": 443.0, ""bateria"": 82.0}",-78.4,-3.2,13
-42,8db3d8a5d2,Sonda de humedad,2026-07-12 03:29:35.947343,"{""bateria"": 20.3, ""humedad_suelo"": 10.2, ""temperatura_suelo"": 23.8, ""conductividad_electrica"": 1.24}",-98.8,-7.1,42
-652,8db3d8a5d2,Sonda de humedad,2026-07-12 04:20:36.382694,"{""bateria"": 21.7, ""humedad_suelo"": 52.6, ""temperatura_suelo"": 22.8, ""conductividad_electrica"": 1.31}",-88.6,4.7,652
-383,eda9a18f55,Estación meteorológica,2026-07-12 04:24:36.187402,"{""bateria"": 37.5, ""temperatura"": 16.3, ""precipitaciones"": 6.5, ""radiacion_solar"": 246.8, ""humedad_relativa"": 24.6, ""velocidad_viento"": 52.6}",-80.7,-8.4,383
-335,922050d9f0,Estación meteorológica,2026-07-12 04:35:36.153462,"{""bateria"": 26.7, ""temperatura"": 13.8, ""precipitaciones"": 18.1, ""radiacion_solar"": 613.3, ""humedad_relativa"": 26.5, ""velocidad_viento"": 28.2}",-74.8,9.3,335
-762,922050d9f0,Estación meteorológica,2026-07-12 05:05:36.462068,"{""bateria"": 52.4, ""temperatura"": 8.2, ""precipitaciones"": 14.9, ""radiacion_solar"": 322.9, ""humedad_relativa"": 28.1, ""velocidad_viento"": 55.9}",-76.3,-7.2,762
-534,9ed3e3f644,Caudalímetro,2026-07-12 05:27:36.295378,"{""caudal"": 477.7, ""bateria"": 82.9}",-73.3,8.7,534
-682,82b45bbd12,Sonda de humedad,2026-07-12 07:09:36.405237,"{""bateria"": 77.9, ""humedad_suelo"": 11.0, ""temperatura_suelo"": 13.1, ""conductividad_electrica"": 1.05}",-111.1,1.2,682
-678,6dc6aa685c,Caudalímetro,2026-07-12 07:13:36.402328,"{""caudal"": 22.9, ""bateria"": 68.5}",-92.3,-5.3,678
-777,82b45bbd12,Sonda de humedad,2026-07-12 08:07:36.474729,"{""bateria"": 83.2, ""humedad_suelo"": 39.5, ""temperatura_suelo"": 30.3, ""conductividad_electrica"": 1.69}",-99.0,2.1,777
-326,eda9a18f55,Estación meteorológica,2026-07-12 08:30:36.147328,"{""bateria"": 42.6, ""temperatura"": 24.1, ""precipitaciones"": 3.1, ""radiacion_solar"": 182.9, ""humedad_relativa"": 96.5, ""velocidad_viento"": 37.7}",-109.6,-0.1,326
+45,c9c6ab138c,Sonda de humedad,2026-07-17 07:57:47.554296,"{""bateria"": 59.8, ""humedad_suelo"": 14.4, ""temperatura_suelo"": 26.5, ""conductividad_electrica"": 1.31}",-62.9,8.3,45
+34,e1ef07290d,Sonda de humedad,2026-07-17 09:19:47.546292,"{""bateria"": 28.7, ""humedad_suelo"": 14.1, ""temperatura_suelo"": 10.8, ""conductividad_electrica"": 2.11}",-96.9,4.9,34
+308,e1ef07290d,Sonda de humedad,2026-07-17 10:20:47.747481,"{""bateria"": 42.7, ""humedad_suelo"": 49.8, ""temperatura_suelo"": 20.6, ""conductividad_electrica"": 1.81}",-65.6,6.1,308
+414,bf747ca2f8,Sonda de humedad,2026-07-17 11:41:47.824895,"{""bateria"": 55.5, ""humedad_suelo"": 50.2, ""temperatura_suelo"": 28.4, ""conductividad_electrica"": 2.06}",-61.2,-17.4,414
+527,32343e9102,Estación meteorológica,2026-07-17 13:12:47.906814,"{""bateria"": 68.9, ""temperatura"": 34.6, ""precipitaciones"": 3.3, ""radiacion_solar"": 299.4, ""humedad_relativa"": 61.7, ""velocidad_viento"": 53.7}",-100.1,-7.9,527
+687,3e641169de,Caudalímetro,2026-07-17 13:28:48.018628,"{""caudal"": 153.5, ""bateria"": 63.0}",-80.3,-14.0,687
+772,32343e9102,Estación meteorológica,2026-07-17 17:02:48.083252,"{""bateria"": 25.1, ""temperatura"": 31.8, ""precipitaciones"": 4.8, ""radiacion_solar"": 448.3, ""humedad_relativa"": 48.3, ""velocidad_viento"": 13.3}",-85.8,-15.8,772
+181,0362caaec1,Estación meteorológica,2026-07-17 17:03:47.647295,"{""bateria"": 60.8, ""temperatura"": 32.5, ""precipitaciones"": 10.8, ""radiacion_solar"": 855.6, ""humedad_relativa"": 55.6, ""velocidad_viento"": 18.4}",-75.9,5.7,181
+26,e1ef07290d,Sonda de humedad,2026-07-17 17:29:47.539272,"{""bateria"": 77.6, ""humedad_suelo"": 37.7, ""temperatura_suelo"": 21.0, ""conductividad_electrica"": 1.03}",-92.1,-19.2,26
+170,e1ef07290d,Sonda de humedad,2026-07-17 18:13:47.639890,"{""bateria"": 32.9, ""humedad_suelo"": 21.3, ""temperatura_suelo"": 29.3, ""conductividad_electrica"": 1.1}",-64.1,-1.0,170
+310,0362caaec1,Estación meteorológica,2026-07-17 18:23:47.749033,"{""bateria"": 34.8, ""temperatura"": -2.0, ""precipitaciones"": 3.1, ""radiacion_solar"": 36.1, ""humedad_relativa"": 81.5, ""velocidad_viento"": 27.5}",-84.8,6.8,310
+705,3e641169de,Caudalímetro,2026-07-17 18:43:48.031889,"{""caudal"": 418.6, ""bateria"": 73.6}",-107.9,-9.6,705
+42,3e641169de,Caudalímetro,2026-07-17 19:14:47.552188,"{""caudal"": 151.2, ""bateria"": 32.0}",-101.4,-12.3,42
+7,bf747ca2f8,Sonda de humedad,2026-07-17 19:45:47.509006,"{""bateria"": 95.8, ""humedad_suelo"": 47.3, ""temperatura_suelo"": 28.3, ""conductividad_electrica"": 1.64}",-80.8,-15.0,7
+638,e1ef07290d,Sonda de humedad,2026-07-17 20:19:47.984539,"{""bateria"": 79.9, ""humedad_suelo"": 17.8, ""temperatura_suelo"": 19.3, ""conductividad_electrica"": 2.98}",-78.7,-11.3,638
+560,0362caaec1,Estación meteorológica,2026-07-17 23:40:47.929708,"{""bateria"": 42.4, ""temperatura"": 26.3, ""precipitaciones"": 16.7, ""radiacion_solar"": 38.9, ""humedad_relativa"": 93.9, ""velocidad_viento"": 12.1}",-73.5,-12.7,560
+73,32343e9102,Estación meteorológica,2026-07-17 23:43:47.574323,"{""bateria"": 92.0, ""temperatura"": 31.4, ""precipitaciones"": 9.9, ""radiacion_solar"": 545.6, ""humedad_relativa"": 89.7, ""velocidad_viento"": 16.3}",-68.0,-11.9,73
+21,32343e9102,Estación meteorológica,2026-07-17 23:53:47.534830,"{""bateria"": 80.9, ""temperatura"": 12.2, ""precipitaciones"": 0.2, ""radiacion_solar"": 962.2, ""humedad_relativa"": 92.5, ""velocidad_viento"": 44.4}",-99.1,-15.5,21
+569,bf747ca2f8,Sonda de humedad,2026-07-18 01:02:47.936170,"{""bateria"": 98.0, ""humedad_suelo"": 54.4, ""temperatura_suelo"": 27.1, ""conductividad_electrica"": 1.87}",-71.5,4.5,569
+591,c2348ac19e,Estación meteorológica,2026-07-18 02:33:47.951691,"{""bateria"": 40.9, ""temperatura"": 38.2, ""precipitaciones"": 9.6, ""radiacion_solar"": 373.1, ""humedad_relativa"": 47.4, ""velocidad_viento"": 38.2}",-92.7,-12.2,591
+759,6c0ecaa7aa,Caudalímetro,2026-07-18 03:22:48.074521,"{""caudal"": 420.4, ""bateria"": 63.5}",-64.2,-2.1,759
+373,3e641169de,Caudalímetro,2026-07-18 03:55:47.795581,"{""caudal"": 105.1, ""bateria"": 91.6}",-107.6,-15.9,373
+551,c2348ac19e,Estación meteorológica,2026-07-18 04:10:47.923474,"{""bateria"": 27.0, ""temperatura"": 29.9, ""precipitaciones"": 4.4, ""radiacion_solar"": 576.7, ""humedad_relativa"": 35.6, ""velocidad_viento"": 7.2}",-83.3,-12.7,551
+711,32343e9102,Estación meteorológica,2026-07-18 08:42:48.036285,"{""bateria"": 94.1, ""temperatura"": 31.1, ""precipitaciones"": 7.9, ""radiacion_solar"": 823.4, ""humedad_relativa"": 92.5, ""velocidad_viento"": 2.0}",-109.7,-6.6,711
+289,c2348ac19e,Estación meteorológica,2026-07-18 10:13:47.734706,"{""bateria"": 31.9, ""temperatura"": 36.7, ""precipitaciones"": 14.7, ""radiacion_solar"": 735.1, ""humedad_relativa"": 26.2, ""velocidad_viento"": 41.3}",-75.8,9.2,289
+793,c2348ac19e,Estación meteorológica,2026-07-18 10:19:48.097792,"{""bateria"": 91.6, ""temperatura"": 35.3, ""precipitaciones"": 11.1, ""radiacion_solar"": 320.3, ""humedad_relativa"": 42.8, ""velocidad_viento"": 52.0}",-91.4,-9.1,793
+703,bf747ca2f8,Sonda de humedad,2026-07-18 10:46:48.030497,"{""bateria"": 49.6, ""humedad_suelo"": 59.0, ""temperatura_suelo"": 23.3, ""conductividad_electrica"": 1.82}",-85.1,5.1,703
+516,bf747ca2f8,Sonda de humedad,2026-07-18 11:17:47.899293,"{""bateria"": 59.4, ""humedad_suelo"": 18.0, ""temperatura_suelo"": 24.9, ""conductividad_electrica"": 1.22}",-76.0,-14.5,516
+383,17444a391d,Caudalímetro,2026-07-18 12:49:47.802540,"{""caudal"": 357.4, ""bateria"": 34.0}",-106.5,4.4,383
+324,e1ef07290d,Sonda de humedad,2026-07-18 13:45:47.760386,"{""bateria"": 21.4, ""humedad_suelo"": 44.0, ""temperatura_suelo"": 25.7, ""conductividad_electrica"": 2.02}",-97.2,-13.0,324
+236,32343e9102,Estación meteorológica,2026-07-18 13:46:47.694491,"{""bateria"": 91.6, ""temperatura"": 14.3, ""precipitaciones"": 12.9, ""radiacion_solar"": 367.5, ""humedad_relativa"": 24.4, ""velocidad_viento"": 46.4}",-66.5,-18.6,236
+710,6c0ecaa7aa,Caudalímetro,2026-07-18 15:33:48.035574,"{""caudal"": 447.0, ""bateria"": 78.1}",-84.5,-0.8,710
+609,3e641169de,Caudalímetro,2026-07-18 15:36:47.964009,"{""caudal"": 236.2, ""bateria"": 83.3}",-119.4,1.3,609
+559,0362caaec1,Estación meteorológica,2026-07-18 16:08:47.929038,"{""bateria"": 24.7, ""temperatura"": 1.1, ""precipitaciones"": 3.7, ""radiacion_solar"": 641.2, ""humedad_relativa"": 23.5, ""velocidad_viento"": 6.9}",-104.2,4.8,559
+593,6c0ecaa7aa,Caudalímetro,2026-07-18 16:43:47.953070,"{""caudal"": 199.5, ""bateria"": 20.8}",-62.4,-14.6,593
+29,3e641169de,Caudalímetro,2026-07-18 17:41:47.542019,"{""caudal"": 325.6, ""bateria"": 56.1}",-90.7,1.0,29
+754,17444a391d,Caudalímetro,2026-07-18 17:51:48.071204,"{""caudal"": 381.6, ""bateria"": 97.8}",-110.0,8.0,754
+652,3e641169de,Caudalímetro,2026-07-18 18:05:47.993993,"{""caudal"": 19.9, ""bateria"": 21.7}",-81.7,-9.4,652
+392,6c0ecaa7aa,Caudalímetro,2026-07-18 18:46:47.808968,"{""caudal"": 154.0, ""bateria"": 90.3}",-97.7,-4.2,392
+770,c2348ac19e,Estación meteorológica,2026-07-18 18:55:48.081882,"{""bateria"": 85.7, ""temperatura"": 24.8, ""precipitaciones"": 8.3, ""radiacion_solar"": 630.6, ""humedad_relativa"": 37.6, ""velocidad_viento"": 20.3}",-114.4,-11.1,770
+174,32343e9102,Estación meteorológica,2026-07-18 19:14:47.642669,"{""bateria"": 32.5, ""temperatura"": 33.6, ""precipitaciones"": 2.2, ""radiacion_solar"": 749.7, ""humedad_relativa"": 20.8, ""velocidad_viento"": 4.6}",-99.4,-4.4,174
+232,17444a391d,Caudalímetro,2026-07-18 19:54:47.691465,"{""caudal"": 23.5, ""bateria"": 63.2}",-91.3,-14.9,232
+704,6c0ecaa7aa,Caudalímetro,2026-07-18 20:16:48.031217,"{""caudal"": 179.7, ""bateria"": 32.3}",-108.9,-18.1,704
+491,c9c6ab138c,Sonda de humedad,2026-07-18 20:22:47.880414,"{""bateria"": 82.2, ""humedad_suelo"": 25.9, ""temperatura_suelo"": 25.5, ""conductividad_electrica"": 2.66}",-117.5,3.2,491
+221,32343e9102,Estación meteorológica,2026-07-18 20:40:47.682597,"{""bateria"": 80.8, ""temperatura"": 22.9, ""precipitaciones"": 1.9, ""radiacion_solar"": 48.1, ""humedad_relativa"": 28.0, ""velocidad_viento"": 31.3}",-94.7,-17.3,221
+755,c2348ac19e,Estación meteorológica,2026-07-18 23:25:48.071813,"{""bateria"": 86.3, ""temperatura"": 6.3, ""precipitaciones"": 15.5, ""radiacion_solar"": 92.1, ""humedad_relativa"": 96.7, ""velocidad_viento"": 38.4}",-73.6,-4.2,755
+104,c2348ac19e,Estación meteorológica,2026-07-19 01:09:47.595403,"{""bateria"": 79.4, ""temperatura"": -0.2, ""precipitaciones"": 11.1, ""radiacion_solar"": 309.6, ""humedad_relativa"": 74.6, ""velocidad_viento"": 33.4}",-71.3,-14.6,104
+234,c2348ac19e,Estación meteorológica,2026-07-19 01:57:47.692986,"{""bateria"": 44.1, ""temperatura"": 28.4, ""precipitaciones"": 7.6, ""radiacion_solar"": 206.2, ""humedad_relativa"": 82.1, ""velocidad_viento"": 52.0}",-105.2,4.3,234
+610,3e641169de,Caudalímetro,2026-07-19 02:32:47.964734,"{""caudal"": 124.9, ""bateria"": 34.5}",-98.5,2.7,610
+706,6c0ecaa7aa,Caudalímetro,2026-07-19 03:18:48.032626,"{""caudal"": 148.2, ""bateria"": 71.7}",-104.8,-16.6,706
+113,bf747ca2f8,Sonda de humedad,2026-07-19 04:28:47.601802,"{""bateria"": 92.1, ""humedad_suelo"": 34.5, ""temperatura_suelo"": 34.5, ""conductividad_electrica"": 1.89}",-119.3,1.5,113
+464,c2348ac19e,Estación meteorológica,2026-07-19 04:35:47.860494,"{""bateria"": 97.8, ""temperatura"": 12.2, ""precipitaciones"": 7.6, ""radiacion_solar"": 682.6, ""humedad_relativa"": 94.0, ""velocidad_viento"": 7.8}",-88.2,-8.0,464
+171,bf747ca2f8,Sonda de humedad,2026-07-19 05:37:47.640578,"{""bateria"": 66.4, ""humedad_suelo"": 49.5, ""temperatura_suelo"": 24.4, ""conductividad_electrica"": 1.61}",-75.4,-14.8,171
+371,0362caaec1,Estación meteorológica,2026-07-19 06:06:47.794244,"{""bateria"": 34.8, ""temperatura"": 37.1, ""precipitaciones"": 12.0, ""radiacion_solar"": 880.7, ""humedad_relativa"": 95.2, ""velocidad_viento"": 56.7}",-90.9,-15.8,371
+197,c9c6ab138c,Sonda de humedad,2026-07-19 06:58:47.660649,"{""bateria"": 35.8, ""humedad_suelo"": 26.7, ""temperatura_suelo"": 12.4, ""conductividad_electrica"": 0.69}",-78.1,-9.3,197
+154,6c0ecaa7aa,Caudalímetro,2026-07-19 07:55:47.629259,"{""caudal"": 79.1, ""bateria"": 80.1}",-97.3,-10.1,154
+378,e1ef07290d,Sonda de humedad,2026-07-19 08:41:47.799128,"{""bateria"": 67.1, ""humedad_suelo"": 33.2, ""temperatura_suelo"": 30.8, ""conductividad_electrica"": 1.19}",-117.4,7.4,378
+758,17444a391d,Caudalímetro,2026-07-19 09:37:48.073831,"{""caudal"": 268.0, ""bateria"": 81.5}",-109.5,-4.8,758
+65,3e641169de,Caudalímetro,2026-07-19 10:30:47.568357,"{""caudal"": 211.1, ""bateria"": 55.8}",-115.6,4.9,65
+165,bf747ca2f8,Sonda de humedad,2026-07-19 13:32:47.636295,"{""bateria"": 68.6, ""humedad_suelo"": 41.7, ""temperatura_suelo"": 30.0, ""conductividad_electrica"": 0.69}",-66.0,-17.3,165
+244,c2348ac19e,Estación meteorológica,2026-07-19 14:33:47.701288,"{""bateria"": 20.5, ""temperatura"": 3.1, ""precipitaciones"": 15.5, ""radiacion_solar"": 522.6, ""humedad_relativa"": 93.7, ""velocidad_viento"": 17.2}",-92.6,-15.3,244
+472,3e641169de,Caudalímetro,2026-07-19 15:55:47.866005,"{""caudal"": 479.9, ""bateria"": 65.9}",-105.6,-0.1,472
+220,0362caaec1,Estación meteorológica,2026-07-19 16:10:47.681790,"{""bateria"": 64.1, ""temperatura"": 19.8, ""precipitaciones"": 2.8, ""radiacion_solar"": 644.5, ""humedad_relativa"": 50.9, ""velocidad_viento"": 17.3}",-113.3,-16.3,220
+66,c9c6ab138c,Sonda de humedad,2026-07-19 16:54:47.569075,"{""bateria"": 39.2, ""humedad_suelo"": 58.2, ""temperatura_suelo"": 28.0, ""conductividad_electrica"": 0.68}",-89.7,-19.1,66
+379,3e641169de,Caudalímetro,2026-07-19 17:00:47.799821,"{""caudal"": 22.6, ""bateria"": 91.8}",-102.6,-13.3,379
+545,32343e9102,Estación meteorológica,2026-07-19 17:14:47.919397,"{""bateria"": 37.6, ""temperatura"": 5.6, ""precipitaciones"": 11.4, ""radiacion_solar"": 356.1, ""humedad_relativa"": 79.6, ""velocidad_viento"": 32.6}",-104.6,-0.7,545
+399,c2348ac19e,Estación meteorológica,2026-07-19 18:12:47.813797,"{""bateria"": 38.4, ""temperatura"": 33.5, ""precipitaciones"": 5.9, ""radiacion_solar"": 520.4, ""humedad_relativa"": 24.5, ""velocidad_viento"": 17.0}",-114.4,-11.5,399
+372,e1ef07290d,Sonda de humedad,2026-07-19 18:13:47.794916,"{""bateria"": 70.5, ""humedad_suelo"": 25.6, ""temperatura_suelo"": 24.5, ""conductividad_electrica"": 2.68}",-104.9,2.3,372
+162,6c0ecaa7aa,Caudalímetro,2026-07-19 18:42:47.634305,"{""caudal"": 481.7, ""bateria"": 42.7}",-117.7,-0.7,162
+445,6c0ecaa7aa,Caudalímetro,2026-07-19 18:47:47.846954,"{""caudal"": 193.6, ""bateria"": 25.0}",-112.3,-16.2,445
+673,c9c6ab138c,Sonda de humedad,2026-07-19 19:08:48.009006,"{""bateria"": 67.8, ""humedad_suelo"": 54.6, ""temperatura_suelo"": 30.6, ""conductividad_electrica"": 1.08}",-110.4,3.3,673
+728,32343e9102,Estación meteorológica,2026-07-19 19:40:48.052564,"{""bateria"": 62.9, ""temperatura"": 9.3, ""precipitaciones"": 9.0, ""radiacion_solar"": 141.0, ""humedad_relativa"": 53.3, ""velocidad_viento"": 39.3}",-95.8,8.2,728
+118,17444a391d,Caudalímetro,2026-07-19 19:52:47.604992,"{""caudal"": 200.0, ""bateria"": 24.0}",-67.7,-7.0,118
+553,17444a391d,Caudalímetro,2026-07-19 20:00:47.924863,"{""caudal"": 134.0, ""bateria"": 97.1}",-72.8,-15.5,553
+321,e1ef07290d,Sonda de humedad,2026-07-19 20:29:47.758157,"{""bateria"": 26.3, ""humedad_suelo"": 57.9, ""temperatura_suelo"": 30.1, ""conductividad_electrica"": 1.11}",-70.2,-9.5,321
+717,0362caaec1,Estación meteorológica,2026-07-19 21:10:48.041739,"{""bateria"": 82.4, ""temperatura"": 5.6, ""precipitaciones"": 19.9, ""radiacion_solar"": 830.6, ""humedad_relativa"": 36.3, ""velocidad_viento"": 59.5}",-88.5,4.5,717
+501,0362caaec1,Estación meteorológica,2026-07-19 21:16:47.887828,"{""bateria"": 83.5, ""temperatura"": 30.3, ""precipitaciones"": 3.2, ""radiacion_solar"": 426.2, ""humedad_relativa"": 44.4, ""velocidad_viento"": 7.7}",-108.6,-7.1,501
+75,3e641169de,Caudalímetro,2026-07-19 21:35:47.575735,"{""caudal"": 236.7, ""bateria"": 34.6}",-78.7,8.7,75
+175,6c0ecaa7aa,Caudalímetro,2026-07-19 21:40:47.643372,"{""caudal"": 456.1, ""bateria"": 58.5}",-77.3,-18.6,175
+352,17444a391d,Caudalímetro,2026-07-19 23:34:47.779786,"{""caudal"": 138.2, ""bateria"": 99.4}",-71.9,0.6,352
+191,c9c6ab138c,Sonda de humedad,2026-07-19 23:35:47.655637,"{""bateria"": 71.1, ""humedad_suelo"": 59.3, ""temperatura_suelo"": 29.0, ""conductividad_electrica"": 1.11}",-82.2,-0.6,191
+409,c2348ac19e,Estación meteorológica,2026-07-20 00:58:47.820853,"{""bateria"": 32.3, ""temperatura"": 28.5, ""precipitaciones"": 16.5, ""radiacion_solar"": 671.9, ""humedad_relativa"": 78.6, ""velocidad_viento"": 43.1}",-102.0,6.5,409
+570,17444a391d,Caudalímetro,2026-07-20 01:56:47.936891,"{""caudal"": 119.5, ""bateria"": 45.1}",-79.3,9.0,570
+493,c2348ac19e,Estación meteorológica,2026-07-20 02:24:47.882207,"{""bateria"": 32.6, ""temperatura"": 32.2, ""precipitaciones"": 18.4, ""radiacion_solar"": 580.6, ""humedad_relativa"": 33.6, ""velocidad_viento"": 31.4}",-72.5,5.2,493
+656,0362caaec1,Estación meteorológica,2026-07-20 02:34:47.996816,"{""bateria"": 47.1, ""temperatura"": 23.7, ""precipitaciones"": 14.8, ""radiacion_solar"": 443.5, ""humedad_relativa"": 94.6, ""velocidad_viento"": 5.6}",-96.3,2.5,656
+800,0362caaec1,Estación meteorológica,2026-07-20 03:02:48.103075,"{""bateria"": 87.9, ""temperatura"": 6.1, ""precipitaciones"": 0.5, ""radiacion_solar"": 699.6, ""humedad_relativa"": 73.0, ""velocidad_viento"": 10.3}",-90.6,-16.9,800
+323,c2348ac19e,Estación meteorológica,2026-07-20 03:27:47.759617,"{""bateria"": 66.1, ""temperatura"": 32.0, ""precipitaciones"": 0.6, ""radiacion_solar"": 45.2, ""humedad_relativa"": 39.9, ""velocidad_viento"": 20.3}",-88.9,6.6,323
+458,c2348ac19e,Estación meteorológica,2026-07-20 03:27:47.856426,"{""bateria"": 49.5, ""temperatura"": 0.9, ""precipitaciones"": 18.1, ""radiacion_solar"": 740.0, ""humedad_relativa"": 73.1, ""velocidad_viento"": 49.4}",-116.8,-6.8,458
+695,0362caaec1,Estación meteorológica,2026-07-20 04:21:48.024752,"{""bateria"": 96.1, ""temperatura"": -0.1, ""precipitaciones"": 6.4, ""radiacion_solar"": 281.4, ""humedad_relativa"": 57.5, ""velocidad_viento"": 8.5}",-111.2,-4.5,695
+432,c2348ac19e,Estación meteorológica,2026-07-20 05:14:47.838013,"{""bateria"": 59.9, ""temperatura"": 32.6, ""precipitaciones"": 12.0, ""radiacion_solar"": 834.9, ""humedad_relativa"": 80.0, ""velocidad_viento"": 43.7}",-83.3,8.6,432
+404,17444a391d,Caudalímetro,2026-07-20 05:35:47.817462,"{""caudal"": 223.4, ""bateria"": 50.6}",-92.7,-11.3,404
+574,17444a391d,Caudalímetro,2026-07-20 06:16:47.939599,"{""caudal"": 494.9, ""bateria"": 74.9}",-66.6,2.9,574
+41,17444a391d,Caudalímetro,2026-07-20 06:55:47.551351,"{""caudal"": 434.3, ""bateria"": 85.9}",-103.8,-6.1,41
+526,17444a391d,Caudalímetro,2026-07-20 08:09:47.906155,"{""caudal"": 11.4, ""bateria"": 40.6}",-94.2,-19.0,526
+578,17444a391d,Caudalímetro,2026-07-20 08:33:47.942270,"{""caudal"": 333.1, ""bateria"": 34.3}",-77.1,-15.7,578
+241,e1ef07290d,Sonda de humedad,2026-07-20 10:35:47.698557,"{""bateria"": 25.2, ""humedad_suelo"": 36.2, ""temperatura_suelo"": 15.9, ""conductividad_electrica"": 1.41}",-118.1,-4.7,241
+109,bf747ca2f8,Sonda de humedad,2026-07-20 11:09:47.599082,"{""bateria"": 61.6, ""humedad_suelo"": 57.9, ""temperatura_suelo"": 20.0, ""conductividad_electrica"": 2.22}",-119.6,1.7,109
+376,32343e9102,Estación meteorológica,2026-07-20 11:43:47.797793,"{""bateria"": 61.9, ""temperatura"": 9.9, ""precipitaciones"": 2.5, ""radiacion_solar"": 293.4, ""humedad_relativa"": 65.3, ""velocidad_viento"": 16.4}",-73.4,-0.1,376
+632,32343e9102,Estación meteorológica,2026-07-20 12:22:47.980230,"{""bateria"": 64.3, ""temperatura"": 27.0, ""precipitaciones"": 8.6, ""radiacion_solar"": 919.5, ""humedad_relativa"": 43.9, ""velocidad_viento"": 50.4}",-66.9,-14.3,632
+288,32343e9102,Estación meteorológica,2026-07-20 13:18:47.734032,"{""bateria"": 21.6, ""temperatura"": 3.5, ""precipitaciones"": 18.4, ""radiacion_solar"": 106.7, ""humedad_relativa"": 90.4, ""velocidad_viento"": 44.3}",-116.2,4.6,288
