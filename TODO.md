@@ -29,10 +29,10 @@ Integrantes del grupo: **Ariel · Alex · Andrés · Alan · Federico**.
 | Rol | Integrante |
 | --- | --- |
 | A — Modelado | Ariel |
-| B — Implementación física | TBD |
+| B — Implementación física | Alan |
 | C — Optimización y escalabilidad | Andres |
 | D — Seguridad y arquitectura | Fede |
-| E — Informe, integración y calidad | TBD |
+| E — Informe, integración y calidad | Alex |
 
 > Falta asignar quién toma cada rol (`COORD-02`). La cátedra exige evidencia de participación de cada integrante
 > mediante commits; el trabajo hecho fuera del repositorio debe quedar atribuido en el README (`RM-02`).
@@ -93,7 +93,7 @@ acordado.
 - [x] **C-02** · Índices, vistas y agregados continuos, cada uno respaldado con `EXPLAIN` → `db/indices_vistas/`
 - [x] **C-03** · Informe §10 — Consultas representativas (cada una necesita una explicación breve de qué pregunta
       responde y por qué es útil). Depende de `C-01`; no tenía responsable en la división original, ver `Q-03`
-- [ ] **C-04** · Informe §14 — Consideraciones de escalabilidad y rendimiento (particionado, retención, precálculo,
+- [x] **C-04** · Informe §14 — Consideraciones de escalabilidad y rendimiento (particionado, retención, precálculo,
       compromisos asumidos). **Es la sección 14, no la 12** — ver `Q-01`
 
 > Usa el DDL y los datos de B (`B-01`, `B-02`) para correr los `EXPLAIN`, y las consultas de todos.
@@ -163,7 +163,7 @@ acordado.
 | 11 | Datos semiestructurados / no estructurados / vectoriales | D | `D-03` | `[ ]` |
 | 12 | Propuesta de arquitectura de datos | D | `D-04` | `[ ]` |
 | 13 | Estrategia de seguridad, permisos y aislamiento | D | `D-05` | `[ ]` |
-| 14 | Escalabilidad y rendimiento | C | `C-04` | `[ ]` |
+| 14 | Escalabilidad y rendimiento | C | `C-04` | `[x]` |
 | 15 | Conclusiones | E | `E-04` | `[ ]` |
 
 Todas las secciones tienen responsable y ninguna está asignada dos veces.
