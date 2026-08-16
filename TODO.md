@@ -66,7 +66,9 @@ acordado.
 - [x] **A-06** · Informe §4 — Modelo conceptual *(6 subsecciones: alcance, diagrama, entidades, relaciones y
       cardinalidades, restricciones del dominio y decisiones de modelado. Las restricciones sin mecanismo
       declarativo detectadas al redactar 4.5 quedan enunciadas ahí; su implementación es de `B-01`)*
-- [ ] **A-07** · Informe §5 — Modelo de implementación según la tecnología elegida
+- [x] **A-07** · Informe §5 — Modelo de implementación según la tecnología elegida *(6 subsecciones: reglas de
+      transformación conceptual→lógico, diagrama, tablas y claves, resolución de N:M, restricciones de integridad
+      y cobertura de los patrones de consulta. Se mantiene en el nivel lógico y remite a §8 para el DDL)*
 - [ ] **A-08** · Informe §6 — Decisiones de normalización / embebido / referencia / desnormalización
 
 ## B — Implementación física
@@ -152,7 +154,7 @@ acordado.
 | 2 | Relevamiento de datos necesarios | E | `E-02` | `[~]` falta §2.8 |
 | 3 | Clasificación de los datos según su tipo | A | `A-05` | `[~]` borrador, sin cerrar |
 | 4 | Modelo conceptual | A | `A-06` | `[x]` |
-| 5 | Modelo de implementación según la tecnología | A | `A-07` | `[ ]` |
+| 5 | Modelo de implementación según la tecnología | A | `A-07` | `[x]` |
 | 6 | Decisiones de normalización / desnormalización | A | `A-08` | `[ ]` |
 | 7 | Justificación de la tecnología seleccionada | E | `E-03` | `[ ]` |
 | 8 | Implementación mínima realizada | B | `B-04` | `[ ]` |
