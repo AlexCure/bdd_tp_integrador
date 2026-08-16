@@ -23,4 +23,4 @@ JOIN tipo_dispositivo td
     ON td.id_tipo = d.id_tipo
 WHERE um.rn = 1
   AND (um.valores_medidos ->> 'bateria')::numeric < 20
-ORDER BY bateria_actual ASC;
+ORDER BY bateria_actual ASC; 

@@ -11,4 +11,4 @@ JOIN regla_alarma ra
     ON ra.id_regla = ea.id_regla
 WHERE ea.fecha_hora >= NOW() - INTERVAL '30 days'
 GROUP BY ra.id_regla, ra.descripcion
-ORDER BY total_eventos DESC;
+ORDER BY total_eventos DESC; 

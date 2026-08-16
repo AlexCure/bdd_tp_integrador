@@ -10,4 +10,4 @@ SELECT
     AVG((valores_medidos ->> 'temperatura_suelo')::numeric) AS temp_promedio,
     AVG((valores_medidos ->> 'caudal')::numeric) AS caudal_promedio
 FROM medicion
-GROUP BY id_dispositivo, DATE_TRUNC('hour', fecha_hora);
+GROUP BY id_dispositivo, DATE_TRUNC('hour', fecha_hora); 

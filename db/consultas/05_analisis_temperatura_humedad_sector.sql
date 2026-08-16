@@ -21,4 +21,4 @@ JOIN lote l
 WHERE i.fecha_fin IS NULL
   AND m.fecha_hora >= NOW() - INTERVAL '24 hours'
 GROUP BY s.id_sector, s.nombre, l.id_lote, l.nombre
-ORDER BY l.nombre, s.nombre;
+ORDER BY l.nombre, s.nombre; 

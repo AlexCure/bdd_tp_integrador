@@ -15,4 +15,4 @@ JOIN pivote p
 JOIN lote l
     ON l.id_lote = ap.id_lote
 WHERE ap.fecha_fin IS NULL
-ORDER BY p.id_pivote;
+ORDER BY p.id_pivote; 
