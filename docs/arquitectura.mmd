@@ -1,0 +1,81 @@
+%%{init: {'theme':'base','themeVariables':{'fontSize':'16px','primaryColor':'#eef4fb','primaryBorderColor':'#4a76a8','lineColor':'#5b7fa6','clusterBkg':'#f7f9fc','clusterBorder':'#b8c7d9'}}}%%
+flowchart TB
+%% Arquitectura de datos — Plataforma de agricultura de precisión IoT/LoRaWAN
+%% TP Integrador BDIA — CEIA FIUBA 2026 · tarea D-02
+%% Recorrido de punta a punta: origen, ingesta, operacional, analítico y consumo.
+%% Cada zona indica con qué rol accede, según db/estructura/04_roles_permisos.sql
+%% Fuente editable de docs/arquitectura.png. Exportar con:
+%%   npx -y @mermaid-js/mermaid-cli -i docs/arquitectura.mmd -o docs/arquitectura.png -s 3 -b white
+
+    subgraph ORIGEN["1 · Origen — dispositivos en campo"]
+        direction LR
+        SUELO["Sondas de suelo<br/>humedad · temperatura · CE<br/>6 niveles de profundidad"]
+        METEO["Estaciones meteorológicas<br/>temp · HR · viento<br/>radiación · lluvia"]
+        RIEGO["Sensores de riego<br/>caudal · presión"]
+        GW(["Gateways LoRaWAN<br/>agregan RSSI · SNR · contador"])
+        SUELO --> GW
+        METEO --> GW
+        RIEGO --> GW
+    end
+
+    subgraph INGESTA["2 · Ingesta — identidad de servicio rol_ingesta"]
+        direction LR
+        NS["Network server LoRaWAN<br/>ChirpStack / TTN<br/><i>custodia las claves de sesión</i>"]
+        COLA["Broker MQTT + cola<br/><i>amortigua picos y cortes</i>"]
+        NORM["Normalización<br/>dev_eui → id_dispositivo<br/>arma valores_medidos JSONB"]
+        NS --> COLA --> NORM
+    end
+
+    subgraph OPERACIONAL["3 · Capa operacional — PostgreSQL 16 + TimescaleDB"]
+        direction LR
+        MED[("<b>medicion</b><br/>hipertabla<br/>particionada por fecha_hora")]
+        CONF[("<b>Configuración</b><br/>campo · lote · sector · pivote<br/>dispositivo · instalacion")]
+        ALARM[("<b>Alarmas</b><br/>regla_alarma<br/>evento_alarma")]
+        IDENT[("<b>Identidad</b><br/>usuario · perfil<br/>seguridad.acceso_campo")]
+        AUD[("<b>auditoria</b><br/>registro_cambios<br/><i>append-only</i>")]
+        CONF -. trigger .-> AUD
+        IDENT -. trigger .-> AUD
+        ALARM -. trigger .-> AUD
+    end
+
+    subgraph ANALITICO["4 · Capa analítica — identidad de servicio rol_analitico"]
+        direction LR
+        RET["Compresión y retención<br/>detalle reciente vs. histórico"]
+        AGG["Agregados continuos<br/>promedios por hora y por día"]
+        VAN["<b>v_medicion_analitica</b><br/>sin datos personales<br/>sin credenciales"]
+        RET --> AGG --> VAN
+    end
+
+    subgraph CONSUMO["5 · Consumidores"]
+        direction LR
+        APP["Aplicación de monitoreo<br/>rol_operador · rol_configurador"]
+        ADMIN["Administración<br/>rol_administrador"]
+        BI["Tableros y BI"]
+        IA["Modelos de IA<br/>predicción de riego<br/>detección de anomalías"]
+    end
+
+    GW   ==>|"uplink"| NS
+    NORM ==>|"INSERT medicion"| MED
+    NORM -->|"INSERT evento"| ALARM
+    MED  -->|"evalúa umbrales"| ALARM
+    MED  ==> RET
+    CONF -->|"ubicación histórica"| VAN
+
+    VAN  ==> BI
+    VAN  ==> IA
+    OPERACIONAL ==>|"consulta operativa<br/>filtrada por RLS"| APP
+    IDENT --> ADMIN
+    AUD   --> ADMIN
+    IA    -.->|"recomendación de riego"| APP
+
+    classDef origen      fill:#eaf3ea,stroke:#5a8f5a,color:#1d3a1d
+    classDef ingesta     fill:#fdf3e3,stroke:#c99a44,color:#4a3510
+    classDef operacional fill:#eef4fb,stroke:#4a76a8,color:#16314d
+    classDef analitico   fill:#f2edf9,stroke:#8365b0,color:#2f1f45
+    classDef consumo     fill:#fdeeee,stroke:#b56a6a,color:#4a1d1d
+
+    class SUELO,METEO,RIEGO,GW origen
+    class NS,COLA,NORM ingesta
+    class MED,CONF,ALARM,IDENT,AUD operacional
+    class RET,AGG,VAN analitico
+    class APP,ADMIN,BI,IA consumo
