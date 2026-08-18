@@ -223,3 +223,11 @@ Todas las secciones tienen responsable y ninguna está asignada dos veces.
   porque `medicion` es hipertabla con PK `(id_medicion, fecha_hora)`; hay que verificar que TimescaleDB admita FK
   entrantes hacia una hipertabla en la versión usada y, si no, documentar la alternativa. Una vez definido, se
   ejecuta como cambio a `B-01`, e impacta en `db/datos/generar_datos.py`.
+
+
+  ## Revisar
+- Se popula la tabla dimensiones con 50,000 registros sinteticos, extendiendo la ventana temporal de 1 mes a 1 año. Habria que actualizar el punto 9 del informe
+Rango temporal: del 2025-08-16 16:12:26 al 2026-08-16 16:02:57 (1 año de mediciones históricas)
+
+
+
